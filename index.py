@@ -1,4 +1,3 @@
-
 import time
 import random
 from enum import Enum
@@ -167,12 +166,11 @@ def analyze_dataset(dataset: List[ChatbotEngagementMetrics]):
     print(f"Medium engagement conversations: {medium_engagement}")
     print(f"Low engagement conversations: {low_engagement}")
 
-# Generate and analyze dataset
 num_conversations = 100
 dataset = generate_dataset(num_conversations)
 analyze_dataset(dataset)
 
-# Print detailed metrics for the first 5 conversations
+
 for i, metrics in enumerate(dataset[:5]):
     print(f"\nDetailed metrics for conversation {i+1}:")
     metrics.print_metrics()
